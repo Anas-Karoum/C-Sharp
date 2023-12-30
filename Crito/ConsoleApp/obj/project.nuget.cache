@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "sd3oEdHNfY46cCRTIzyzzpy0gyhuSfPaGiJDGpgK2ULprpqTVaCHYJb/ns+mI2Ze33Tmep77e6UyPGuDxadekA==",
+  "success": true,
+  "projectFilePath": "C:\\yh\\c-sharp\\Crito\\ConsoleApp\\ConsoleApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\anask\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

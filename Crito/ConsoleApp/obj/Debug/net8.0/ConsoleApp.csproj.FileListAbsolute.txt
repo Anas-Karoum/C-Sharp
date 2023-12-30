@@ -1,0 +1,17 @@
+C:\yh\c-sharp\Crito\ConsoleApp\bin\Debug\net8.0\ConsoleApp.exe
+C:\yh\c-sharp\Crito\ConsoleApp\bin\Debug\net8.0\ConsoleApp.deps.json
+C:\yh\c-sharp\Crito\ConsoleApp\bin\Debug\net8.0\ConsoleApp.runtimeconfig.json
+C:\yh\c-sharp\Crito\ConsoleApp\bin\Debug\net8.0\ConsoleApp.dll
+C:\yh\c-sharp\Crito\ConsoleApp\bin\Debug\net8.0\ConsoleApp.pdb
+C:\yh\c-sharp\Crito\ConsoleApp\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\yh\c-sharp\Crito\ConsoleApp\obj\Debug\net8.0\ConsoleApp.csproj.AssemblyReference.cache
+C:\yh\c-sharp\Crito\ConsoleApp\obj\Debug\net8.0\ConsoleApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\yh\c-sharp\Crito\ConsoleApp\obj\Debug\net8.0\ConsoleApp.AssemblyInfoInputs.cache
+C:\yh\c-sharp\Crito\ConsoleApp\obj\Debug\net8.0\ConsoleApp.AssemblyInfo.cs
+C:\yh\c-sharp\Crito\ConsoleApp\obj\Debug\net8.0\ConsoleApp.csproj.CoreCompileInputs.cache
+C:\yh\c-sharp\Crito\ConsoleApp\obj\Debug\net8.0\ConsoleApp.csproj.CopyComplete
+C:\yh\c-sharp\Crito\ConsoleApp\obj\Debug\net8.0\ConsoleApp.dll
+C:\yh\c-sharp\Crito\ConsoleApp\obj\Debug\net8.0\refint\ConsoleApp.dll
+C:\yh\c-sharp\Crito\ConsoleApp\obj\Debug\net8.0\ConsoleApp.pdb
+C:\yh\c-sharp\Crito\ConsoleApp\obj\Debug\net8.0\ConsoleApp.genruntimeconfig.cache
+C:\yh\c-sharp\Crito\ConsoleApp\obj\Debug\net8.0\ref\ConsoleApp.dll
