@@ -15,3 +15,4 @@ C:\yh\c-sharp\Crito\ConsoleApp\obj\Debug\net8.0\refint\ConsoleApp.dll
 C:\yh\c-sharp\Crito\ConsoleApp\obj\Debug\net8.0\ConsoleApp.pdb
 C:\yh\c-sharp\Crito\ConsoleApp\obj\Debug\net8.0\ConsoleApp.genruntimeconfig.cache
 C:\yh\c-sharp\Crito\ConsoleApp\obj\Debug\net8.0\ref\ConsoleApp.dll
+C:\yh\c-sharp\Crito\ConsoleApp\obj\Debug\net8.0\ConsoleApp.sourcelink.json

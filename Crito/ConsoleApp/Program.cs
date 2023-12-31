@@ -13,6 +13,7 @@ public class Contact
 
     public override string ToString()
     {
+        // Returnerar en sträng som representerar kontaktinformation
         return $"{FirstName} {LastName} - {PhoneNumber} - {Email} - {Address}";
     }
 }
@@ -23,11 +24,13 @@ class Program
 
     static Program()
     {
+        // Skapar en ny lista för kontakter
         contacts = new List<Contact>();
     }
 
     static void Main()
     {
+        // Laddar kontakter från fil vid programstart
         LoadContacts();
 
         while (true)
@@ -46,19 +49,19 @@ class Program
             switch (choice)
             {
                 case 1:
-                    AddContact();
+                    AddContact(); // Anropar funktionen för att lägga till en kontakt
                     break;
                 case 2:
-                    ListContacts();
+                    ListContacts(); // Anropar funktionen för att lista alla kontakter
                     break;
                 case 3:
-                    ShowContactDetails();
+                    ShowContactDetails(); // Anropar funktionen för att visa detaljerad information om en kontakt
                     break;
                 case 4:
-                    RemoveContact();
+                    RemoveContact(); // Anropar funktionen för att ta bort en kontakt
                     break;
                 case 5:
-                    SaveContacts();
+                    SaveContacts(); // Sparar kontakter och avslutar programmet
                     return;
             }
         }
@@ -66,6 +69,7 @@ class Program
 
     private static void PrintHeader(string text)
     {
+        // Skriver ut en rubrik i versaler
         Console.WriteLine(text.ToUpper());
         Console.WriteLine();
     }
@@ -74,11 +78,13 @@ class Program
     {
         try
         {
+            // Försöker läsa kontakter från JSON-fil
             string json = File.ReadAllText("contacts.json");
             contacts = JsonConvert.DeserializeObject<List<Contact>>(json) ?? new List<Contact>();
         }
         catch (FileNotFoundException)
         {
+            // Om filen inte hittas, skapas en ny tom lista för kontakter
             contacts = new List<Contact>();
         }
     }
@@ -87,6 +93,7 @@ class Program
     {
         if (contacts != null)
         {
+            // Sparar kontakter till JSON-fil
             string json = JsonConvert.SerializeObject(contacts, Newtonsoft.Json.Formatting.Indented);
             File.WriteAllText("contacts.json", json);
         }
@@ -98,6 +105,7 @@ class Program
 
     private static void AddContact()
     {
+        // Lägger till en ny kontakt med användarens inmatning
         Console.WriteLine("Lägg till en ny kontakt:\n");
 
         Console.Write("Förnamn: ");
@@ -117,6 +125,7 @@ class Program
 
         if (contacts != null)
         {
+            // Skapar en ny kontakt och lägger till den i listan
             Contact newContact = new Contact
             {
                 FirstName = firstName,
@@ -143,6 +152,7 @@ class Program
     {
         if (contacts != null)
         {
+            // Skriver ut alla kontakter i listan
             Console.WriteLine("\nAlla kontakter:\n");
 
             foreach (var contact in contacts)
@@ -161,15 +171,18 @@ class Program
 
     private static void ShowContactDetails()
     {
+        // Visar detaljerad information om en kontakt baserat på e-postadress
         Console.Write("\nAnge e-postadress för att visa detaljerad information: ");
         string? email = Console.ReadLine();
 
         if (contacts != null)
         {
+            // Letar efter kontakten med den angivna e-postadressen
             Contact? contact = contacts?.FirstOrDefault(c => c.Email?.Equals(email, StringComparison.OrdinalIgnoreCase) ?? false);
 
             if (contact != null)
             {
+                // Visar detaljerad information om kontakten
                 Console.WriteLine("\nDetaljerad information om kontakten:\n");
                 Console.WriteLine(contact);
             }
@@ -189,15 +202,18 @@ class Program
 
     private static void RemoveContact()
     {
+        // Tar bort en kontakt baserat på e-postadress
         Console.Write("\nAnge e-postadress för att ta bort kontakten: ");
         string? email = Console.ReadLine();
 
         if (contacts != null)
         {
+            // Letar efter kontakten med den angivna e-postadressen
             Contact? contactToRemove = contacts?.FirstOrDefault(c => c.Email?.Equals(email, StringComparison.OrdinalIgnoreCase) ?? false);
 
             if (contactToRemove != null)
             {
+                // Tar bort kontakten från listan
                 contacts?.Remove(contactToRemove);
                 Console.WriteLine("\nKontakten har tagits bort.");
             }
@@ -217,6 +233,7 @@ class Program
 
     private static int GetChoice()
     {
+        // Hanterar användarens val av menyalternativ
         int choice;
         while (!int.TryParse(Console.ReadLine(), out choice) || choice < 1 || choice > 5)
         {
